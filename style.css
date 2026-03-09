@@ -23,7 +23,7 @@ body,
 html {
 	width: 100%;
 	height: 100%;
-	background-color: black;
+	background-image: url(assets/bg/bg.jpg);
 	font-family: 'pixelFlag';
 	color: #fff;
 	overflow: hidden;
@@ -348,7 +348,8 @@ main{
 	background-repeat: no-repeat;
 	image-rendering: pixelated;
 	padding: 10px;
-margin-right: 10px;}
+}
+
 .smallBtn:hover{
 	filter: brightness(0.7);
 }
@@ -364,10 +365,10 @@ margin-right: 10px;}
 .playOnPauseButton{
 	width: 50px;
 }
-.smallBtn{
+/* .smallBtn{
 	filter:drop-shadow(5px 5px 5px #0000004e);
 	cursor: pointer;
-}
+} */
 .button:hover{
 	filter: brightness(0.7);
 
@@ -422,7 +423,7 @@ margin-right: 10px;}
 	filter: brightness(0.9);
 	background-size: cover;
 	background-position:top;
-	background-image: url('stuff/bg.png');
+	background-image: url('assets/bg/bg.jpg');
 }
 .mainLeftInfo{
   position: absolute;
@@ -512,17 +513,6 @@ margin-right: 10px;}
   position: absolute;
   bottom: 20px;
 }
-.addBtn{
-  position: absolute;
-  align-items: center;
-  top: 30%;
-  right: 10%;
-  content: url(assets/gui/addBook.png);
-  height: 40%;
-  cursor: pointer;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 .addBtn:hover{
   filter: brightness(0.8);
 }
@@ -530,18 +520,9 @@ margin-right: 10px;}
   font-weight: normal;
   font-size: 30px;
 }
-.saveMeAdd{
-  align-items: center;
-  background-image: url(assets/gui/smallBtn.png);
-  height: 40%;
-  cursor: pointer;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: static;
-}
 .saveMeButtonsHolder{
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
 }
 .gameOverCoinsHolder{
   display: flex;
@@ -567,7 +548,7 @@ margin-right: 10px;}
 .upgrade{
   display: flex;
   align-items: end;
-  justify-content: center;
+  justify-content: end;
 }
 .upgradeCoinImg{
   width: 20px;
@@ -598,7 +579,7 @@ margin-right: 10px;}
 .upgradesWrapper{
   position: absolute;
   top: 35%;
-  left: 10%;
+  left: 40%;
 }
 .shieldUpgradeHolder, .boosterUpgradeHolder{
   display: flex;
